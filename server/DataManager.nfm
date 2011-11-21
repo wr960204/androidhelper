@@ -1,0 +1,16 @@
+object DM: TDM
+  OnCreate = DataModuleCreate
+  OnDestroy = DataModuleDestroy
+  Height = 333
+  Width = 468
+  object Conn: TADOConnection
+    Left = 40
+    Top = 32
+  end
+  object Qry: TADOQuery
+    Parameters = <>
+    Connection = Conn
+    Left = 40
+    Top = 88
+  end
+end

@@ -1,0 +1,2 @@
+{.$DEFINE CHS}
+{$DEFINE ENG}

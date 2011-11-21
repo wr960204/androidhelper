@@ -1,0 +1,131 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{0c96bb61-397d-4c11-a328-0f05bc17acfb}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCCIL</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>bin\ASServer.dll</DCC_DependencyCheckOutputName>
+    <MainSource>ASServer.dpr</MainSource>
+    <DCC_EnabledPackages>true</DCC_EnabledPackages>
+    <DCC_UsePackage>Borland.VclRtl;Borland.VclDbRtl;Borland.VclAdoDb;Borland.Delphi;C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.XML.dll;C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Web.Services.dll;C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Web.dll;C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll;C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Data.dll;C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.configuration.dll</DCC_UsePackage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_Define>RELEASE</DCC_Define>
+    <DCC_ExeOutput>bin</DCC_ExeOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInfoInExe>True</DCC_DebugInfoInExe>
+    <DCC_DebugVN>True</DCC_DebugVN>
+    <DCC_Define>DEBUG</DCC_Define>
+    <DCC_Platform>x86</DCC_Platform>
+    <DCC_UnitSearchPath>C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727;D:\Develop\Delphi2007\bin</DCC_UnitSearchPath>
+    <DCC_ResourcePath>C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727;D:\Develop\Delphi2007\bin</DCC_ResourcePath>
+    <DCC_IncludePath>C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727;D:\Develop\Delphi2007\bin</DCC_IncludePath>
+    <DCC_ExeOutput>bin</DCC_ExeOutput>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>DelphiDotNet.Personality</Borland.Personality>
+    <Borland.ProjectType>AspProject</Borland.ProjectType>
+    <BorlandProject>
+<BorlandProject><DelphiDotNet.Personality><Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters></Parameters><VersionInfo><VersionInfo Name="IncludeVerInfo">False</VersionInfo><VersionInfo Name="AutoIncBuild">False</VersionInfo><VersionInfo Name="MajorVer">1</VersionInfo><VersionInfo Name="MinorVer">0</VersionInfo><VersionInfo Name="Release">0</VersionInfo><VersionInfo Name="Build">0</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">False</VersionInfo><VersionInfo Name="Locale">2052</VersionInfo><VersionInfo Name="CodePage">936</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName"></VersionInfoKeys><VersionInfoKeys Name="FileDescription"></VersionInfoKeys><VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="InternalName"></VersionInfoKeys><VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys><VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys><VersionInfoKeys Name="ProductName"></VersionInfoKeys><VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="Comments"></VersionInfoKeys></VersionInfoKeys><Options><Options Name="AspNetUseHostServer">True</Options><Options Name="AspNetLaunchBrowser">True</Options><Options Name="AspNetStartPage">ASService.asmx</Options><Options Name="AspNetHostServer">Cassini</Options><Options Name="AspNetCassiniPortIndex">0</Options><Options Name="AspNetCassiniStartup">ProjectRun</Options><Options Name="AspNetIISVirtualDirectory"></Options><Options Name="AspNetHTTPAddress"></Options><Options Name="AspNetCassiniHTTPAddress"></Options></Options><Source><Source Name="MainSource">ASServer.dpr</Source></Source></DelphiDotNet.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+  <ItemGroup>
+    <Reference Include="$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.configuration.dll">
+      <AssemblyName>System.Configuration</AssemblyName>
+      <Version>2.0.0.0</Version>
+      <HintPath>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.configuration.dll</HintPath>
+      <AssemblyTag>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.configuration.dll</AssemblyTag>
+      <LinkUnits>False</LinkUnits>
+    </Reference>
+    <Reference Include="$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Data.dll">
+      <AssemblyName>System.Data</AssemblyName>
+      <Version>2.0.0.0</Version>
+      <HintPath>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Data.dll</HintPath>
+      <AssemblyTag>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Data.dll</AssemblyTag>
+      <LinkUnits>False</LinkUnits>
+    </Reference>
+    <Reference Include="$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.dll">
+      <AssemblyName>System</AssemblyName>
+      <Version>2.0.0.0</Version>
+      <HintPath>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.dll</HintPath>
+      <AssemblyTag>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.dll</AssemblyTag>
+      <LinkUnits>False</LinkUnits>
+    </Reference>
+    <Reference Include="$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Web.dll">
+      <AssemblyName>System.Web</AssemblyName>
+      <Version>2.0.0.0</Version>
+      <HintPath>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Web.dll</HintPath>
+      <AssemblyTag>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Web.dll</AssemblyTag>
+      <LinkUnits>False</LinkUnits>
+    </Reference>
+    <Reference Include="$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Web.Services.dll">
+      <AssemblyName>System.Web.Services</AssemblyName>
+      <Version>2.0.0.0</Version>
+      <HintPath>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Web.Services.dll</HintPath>
+      <AssemblyTag>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Web.Services.dll</AssemblyTag>
+      <LinkUnits>False</LinkUnits>
+    </Reference>
+    <Reference Include="$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.XML.dll">
+      <AssemblyName>System.XML</AssemblyName>
+      <Version>2.0.0.0</Version>
+      <HintPath>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.XML.dll</HintPath>
+      <AssemblyTag>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.XML.dll</AssemblyTag>
+      <LinkUnits>False</LinkUnits>
+    </Reference>
+    <Reference Include="D:\Develop\Delphi2007\bin\Borland.Delphi.dll">
+      <AssemblyName>Borland.Delphi</AssemblyName>
+      <Version>11.0.5000.9245</Version>
+      <HintPath>D:\Develop\Delphi2007\bin\Borland.Delphi.dll</HintPath>
+      <AssemblyTag>D:\Develop\Delphi2007\bin\Borland.Delphi.dll</AssemblyTag>
+      <LinkUnits>False</LinkUnits>
+    </Reference>
+    <Reference Include="D:\Develop\Delphi2007\bin\Borland.VclAdoDb.dll">
+      <AssemblyName>Borland.VclAdoDb</AssemblyName>
+      <Version>11.0.5000.9245</Version>
+      <HintPath>D:\Develop\Delphi2007\bin\Borland.VclAdoDb.dll</HintPath>
+      <AssemblyTag>D:\Develop\Delphi2007\bin\Borland.VclAdoDb.dll</AssemblyTag>
+      <LinkUnits>False</LinkUnits>
+    </Reference>
+    <Reference Include="D:\Develop\Delphi2007\bin\Borland.VclDbRtl.dll">
+      <AssemblyName>Borland.VclDbRtl</AssemblyName>
+      <Version>11.0.5000.9245</Version>
+      <HintPath>D:\Develop\Delphi2007\bin\Borland.VclDbRtl.dll</HintPath>
+      <AssemblyTag>D:\Develop\Delphi2007\bin\Borland.VclDbRtl.dll</AssemblyTag>
+      <LinkUnits>False</LinkUnits>
+    </Reference>
+    <Reference Include="D:\Develop\Delphi2007\bin\Borland.VclRtl.dll">
+      <AssemblyName>Borland.VclRtl</AssemblyName>
+      <Version>11.0.5000.9245</Version>
+      <HintPath>D:\Develop\Delphi2007\bin\Borland.VclRtl.dll</HintPath>
+      <AssemblyTag>D:\Develop\Delphi2007\bin\Borland.VclRtl.dll</AssemblyTag>
+      <LinkUnits>False</LinkUnits>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <DelphiCompile Include="ASServer.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <EmbeddedResource Include="ASService.resx">
+      <DependentUpon>ASService.pas</DependentUpon>
+    </EmbeddedResource>
+    <DCCReference Include="AndroidApp.pas" />
+    <DCCReference Include="ASService.pas">
+      <DependentUpon>ASService.asmx</DependentUpon>
+      <Form>ASService.TASServices</Form>
+      <DesignClass>System.Web.Services.WebService</DesignClass>
+    </DCCReference>
+    <DCCReference Include="DataManager.pas">
+      <Form>DataManager.TDM</Form>
+      <DesignClass>Borland.Vcl.TDataModule</DesignClass>
+    </DCCReference>
+    <DCCReference Include="SQLConsts.pas" />
+    <None Include="ASService.asmx" />
+    <None Include="Web.config" />
+  </ItemGroup>
+</Project>
